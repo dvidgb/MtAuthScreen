@@ -16,16 +16,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot_fb" translatesAutoresizingMaskIntoConstraints="NO" id="KBD-X8-42U">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_fb" translatesAutoresizingMaskIntoConstraints="NO" id="oYz-Gb-DXo">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="my8-85-3Rc"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ho-lF-KqF">
+                                <rect key="frame" x="16" y="298" width="358" height="94"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veU-9z-VkQ">
+                                        <rect key="frame" x="16" y="62.666666666666693" width="326" height="23.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9CK-sE-jpK">
+                                        <rect key="frame" x="16" y="39.333333333333314" width="326" height="18.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de teléfono o correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dnb-5c-aOD">
+                                        <rect key="frame" x="16" y="7.9999999999999982" width="326" height="23.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Dnb-5c-aOD" firstAttribute="leading" secondItem="6ho-lF-KqF" secondAttribute="leading" constant="16" id="FsY-oE-w8d"/>
+                                    <constraint firstAttribute="trailing" secondItem="veU-9z-VkQ" secondAttribute="trailing" constant="16" id="SWy-gD-3Rh"/>
+                                    <constraint firstAttribute="height" constant="94" id="UR2-z2-BTy"/>
+                                    <constraint firstItem="veU-9z-VkQ" firstAttribute="leading" secondItem="6ho-lF-KqF" secondAttribute="leading" constant="16" id="WQw-5E-y0B"/>
+                                    <constraint firstItem="Dnb-5c-aOD" firstAttribute="top" secondItem="6ho-lF-KqF" secondAttribute="top" constant="8" id="iw5-nb-5yx"/>
+                                    <constraint firstAttribute="bottom" secondItem="veU-9z-VkQ" secondAttribute="bottom" constant="8" id="kl3-AH-pB8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dnb-5c-aOD" secondAttribute="trailing" constant="16" id="oON-YR-hbv"/>
+                                    <constraint firstItem="9CK-sE-jpK" firstAttribute="top" secondItem="Dnb-5c-aOD" secondAttribute="bottom" constant="8" id="zY8-1Z-MC6"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_fb" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-ht-xU9">
+                                <rect key="frame" x="157.66666666666666" y="102.66666666666669" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="6Lp-uu-IVN"/>
+                                    <constraint firstAttribute="height" constant="75" id="mGq-QQ-mG8"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fix-J3-npw">
+                                <rect key="frame" x="0.0" y="344.66666666666669" width="390" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2Ny-9N-ch2"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="screenshot_fb" translatesAutoresizingMaskIntoConstraints="NO" id="KBD-X8-42U">
+                                <rect key="frame" x="0.0" y="7" width="390" height="844"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6ho-lF-KqF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Or-iO-Dd0"/>
+                            <constraint firstItem="1Cu-ht-xU9" firstAttribute="centerX" secondItem="oYz-Gb-DXo" secondAttribute="centerX" id="4Dj-79-hoB"/>
                             <constraint firstItem="KBD-X8-42U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Sn-Tp-kSs"/>
+                            <constraint firstItem="1Cu-ht-xU9" firstAttribute="centerY" secondItem="oYz-Gb-DXo" secondAttribute="centerY" constant="12" id="ECx-84-1CF"/>
+                            <constraint firstItem="fix-J3-npw" firstAttribute="centerY" secondItem="6ho-lF-KqF" secondAttribute="centerY" id="EuC-h5-abC"/>
+                            <constraint firstItem="oYz-Gb-DXo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F1K-Ex-1kb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ho-lF-KqF" secondAttribute="trailing" constant="16" id="OV7-Z9-Nyg"/>
                             <constraint firstAttribute="bottom" secondItem="KBD-X8-42U" secondAttribute="bottom" id="SJC-xv-ful"/>
+                            <constraint firstItem="oYz-Gb-DXo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UUK-GI-4h3"/>
+                            <constraint firstItem="oYz-Gb-DXo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xy0-4P-54b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KBD-X8-42U" secondAttribute="trailing" id="aUI-zG-Ojq"/>
+                            <constraint firstItem="6ho-lF-KqF" firstAttribute="top" secondItem="oYz-Gb-DXo" secondAttribute="bottom" constant="42" id="dZJ-rn-EkV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fix-J3-npw" secondAttribute="trailing" id="tbj-HB-pGQ"/>
+                            <constraint firstItem="fix-J3-npw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wGq-4a-gj6"/>
                             <constraint firstItem="KBD-X8-42U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xyp-2j-1Kl"/>
                         </constraints>
                     </view>
@@ -36,6 +98,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="header_fb" width="1125" height="692"/>
+        <image name="logo_fb" width="196" height="196"/>
         <image name="screenshot_fb" width="1125" height="2436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
