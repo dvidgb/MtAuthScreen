@@ -30,11 +30,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9CK-sE-jpK">
-                                        <rect key="frame" x="16" y="39.333333333333314" width="326" height="18.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de teléfono o correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dnb-5c-aOD">
                                         <rect key="frame" x="16" y="7.9999999999999982" width="326" height="23.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -47,12 +42,9 @@
                                     <constraint firstAttribute="trailing" secondItem="veU-9z-VkQ" secondAttribute="trailing" constant="16" id="SWy-gD-3Rh"/>
                                     <constraint firstAttribute="height" constant="94" id="UR2-z2-BTy"/>
                                     <constraint firstItem="veU-9z-VkQ" firstAttribute="leading" secondItem="6ho-lF-KqF" secondAttribute="leading" constant="16" id="WQw-5E-y0B"/>
-                                    <constraint firstAttribute="trailing" secondItem="9CK-sE-jpK" secondAttribute="trailing" constant="16" id="Z1F-vm-pVX"/>
-                                    <constraint firstItem="9CK-sE-jpK" firstAttribute="leading" secondItem="6ho-lF-KqF" secondAttribute="leading" constant="16" id="e0u-eC-5cQ"/>
                                     <constraint firstItem="Dnb-5c-aOD" firstAttribute="top" secondItem="6ho-lF-KqF" secondAttribute="top" constant="8" id="iw5-nb-5yx"/>
                                     <constraint firstAttribute="bottom" secondItem="veU-9z-VkQ" secondAttribute="bottom" constant="8" id="kl3-AH-pB8"/>
                                     <constraint firstAttribute="trailing" secondItem="Dnb-5c-aOD" secondAttribute="trailing" constant="16" id="oON-YR-hbv"/>
-                                    <constraint firstItem="9CK-sE-jpK" firstAttribute="top" secondItem="Dnb-5c-aOD" secondAttribute="bottom" constant="8" id="zY8-1Z-MC6"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_fb" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-ht-xU9">
@@ -63,7 +55,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fix-J3-npw">
-                                <rect key="frame" x="0.0" y="344.66666666666669" width="390" height="1"/>
+                                <rect key="frame" x="16" y="344.66666666666669" width="358" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="2Ny-9N-ch2"/>
@@ -136,12 +128,24 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dL1-hQ-miN" secondAttribute="bottom" constant="22" id="dcs-Vv-do9"/>
                             <constraint firstItem="PPS-dh-vha" firstAttribute="centerX" secondItem="Fkh-ig-YqB" secondAttribute="centerX" id="qSj-27-LjK"/>
                             <constraint firstItem="57d-Tc-Cat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="s91-gs-agH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fix-J3-npw" secondAttribute="trailing" id="tbj-HB-pGQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fix-J3-npw" secondAttribute="trailing" constant="16" id="tbj-HB-pGQ"/>
                             <constraint firstItem="chI-8O-JGF" firstAttribute="top" secondItem="57d-Tc-Cat" secondAttribute="bottom" constant="16" id="uua-XW-Kdw"/>
-                            <constraint firstItem="fix-J3-npw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wGq-4a-gj6"/>
+                            <constraint firstItem="fix-J3-npw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wGq-4a-gj6"/>
                             <constraint firstItem="57d-Tc-Cat" firstAttribute="top" secondItem="6ho-lF-KqF" secondAttribute="bottom" constant="16" id="zO8-ui-815"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomLineView" destination="Fkh-ig-YqB" id="fnG-4H-E80"/>
+                        <outlet property="createAccountButton" destination="dL1-hQ-miN" id="cbn-lG-Eye"/>
+                        <outlet property="forgottenPasswordButton" destination="chI-8O-JGF" id="s6M-d0-Jsm"/>
+                        <outlet property="headerImageView" destination="oYz-Gb-DXo" id="RcG-QG-He1"/>
+                        <outlet property="initSessionButton" destination="57d-Tc-Cat" id="3WU-0X-pw3"/>
+                        <outlet property="loginDataView" destination="6ho-lF-KqF" id="aOp-ZA-Uu5"/>
+                        <outlet property="logoImageview" destination="1Cu-ht-xU9" id="yYu-s2-zZg"/>
+                        <outlet property="orLabel" destination="PPS-dh-vha" id="q5A-Yx-YsI"/>
+                        <outlet property="passwordTextField" destination="veU-9z-VkQ" id="VHU-yq-mg0"/>
+                        <outlet property="userTextField" destination="Dnb-5c-aOD" id="ZyU-uG-iks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
